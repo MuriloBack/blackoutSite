@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/grid-layout.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/opçoes.js"></script>
+    <title>Produto</title>
+
+</head>
+
+<body>
+
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="border-bottom: 2px solid black;">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo2.png" alt="Logo" height="80px" width="120px" class="d-inline-block align-top">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Alterna Navegação">
+                <span class="navbar-toggler-icon"> </span>
+            </button>
+                <!-- menu sanduiche -->
+
+
+
+                <form class="form-inline my-2 my-lg-0 pesquisa" id="myNavbar" style="margin: 0 auto;">
+                    <input type="search" class="form-control mr-sm-2" style="border-radius: 15px; width: 400px;" placeholder="O que você gostaria hoje?">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" style="border-radius: 15px;" type="submit"> Pesquisar </button>
+                </form>
+
+
+                <div id="myNavbar">
+
+                    <img src="img/iconeLogin.png" class="user" height="70" width="100" alt="Logo"> <br>
+
+                    <a href="#" type="link" class="login" data-toggle="modal" data-target="#myModal">
+                    Entrar
+                </a>
+                    <a href="#" type="link" class="barra"> / </a>
+                    <a href="#" type="link" class="entrar" data-toggle="modal" data-target="#myModal2">
+                    Criar
+                </a>
+
+                </div>
+
+                <!-- Caixa de Login -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content  bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                            <div class="modal-header" id="ModCenter">
+                                <h5> É nosso cliente? Faça seu login </h5>
+
+                                <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                                    <span aria-hidden="true" > &CircleTimes; </span>
+                                </button>
+                            </div>
+
+
+                            <div class="modal-body">
+                                <form action="formulario">
+                                    <div class="form-group">
+                                        <label for="mail"> Usuário: </label>
+                                        <input type="text" id="mail" class="form-control" placeholder="Digite aqui...">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass"> Senha: </label>
+                                        <input type="password" id="pass" class="form-control" placeholder="Digite aqui..."> <br>
+                                        <a href="#"> Esqueceu sua senha? </a>
+                                    </div>
+                                    <center> ------- Ou ------- </center> <br>
+
+                                    <center>
+                                        <button type="button" class="btn btn-primary"> Facebook </button>
+                                    </center> <br>
+
+                                    <center>
+                                        <button type="button" class="btn btn-primary"> Google </button>
+                                    </center> <br> Não tem cadastro? <a href="#" type="link" data-dismiss="modal" class="entrar" data-toggle="modal" data-target="#myModal2"> Cadastre-se. </a>
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                    Confirmar
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Fechar
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Caixa de cadastro -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="ModCenter" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content  bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                            <div class="modal-header" id="ModCenter">
+                                <h5> Cliente novo? Cadastre-se. </h5>
+
+                                <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+                                    <span aria-hidden="true" > &CircleTimes; </span>
+                                </button>
+                            </div>
+
+
+                            <div class="modal-body">
+                                <form action="formulario">
+                                    <div class="form-group">
+                                        <label for="mail"> Nome: </label>
+                                        <input type="text" id="mail" class="form-control" placeholder="Digite aqui...">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="pass"> Email: </label>
+                                        <input type="email" id="pass" class="form-control" placeholder="Digite aqui...">
+
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <label for="pass"> Usuário: </label>
+                                        <input type="text" id="pass" class="form-control" placeholder="Digite aqui...">
+                                        <br>
+                                        <label for="pass"> Senha: </label>
+                                        <input type="password" id="pass" class="form-control" placeholder="Digite aqui...">
+                                        <br>
+                                        <label for="pass"> Confirme sua senha: </label>
+                                        <input type="password" id="pass" class="form-control" placeholder="Digite aqui...">
+                                    </div>
+
+                                    <div style="display: inline-block;">
+                                        <br>
+                                        <label for="pass"> CPF: </label>
+                                        <input type="text" id="pass" class="form-control" placeholder="Digite aqui...">
+                                        <br>
+                                        <label for="pass"> Telefone: </label>
+                                        <input type="tel" id="pass" class="form-control" placeholder="Digite aqui...">
+                                        <br>
+                                        <label for="pass"> Data de Nascimento: </label>
+                                        <input type="date" id="pass" class="form-control" placeholder="Digite aqui...">
+                                    </div> <br> <br>
+
+                                    <div>
+                                        Sexo: <br>
+                                        <label> <input type="radio" required value="fSexo" name="rdSexo"> Masculino </label> <br>
+                                        <label> <input type="radio" required value="fSexo" name="rdSexo"> Feminino </label> <br>
+
+                                        <label> <input type="checkbox" value="valor"> Desejo receber promoções via Email. </label>
+                                    </div> <br> Já é cadastrado? Faça seu <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#myModal"> login. </a>
+
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                                    Cadastrar
+                                </button>
+
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Fechar
+                                </button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </nav>
+        </header> <br> <br>
+
+        <!-- Menu esquerdo -->
+
+        <div class="dropdown" style="float: left;">
+            <a class="btn btn-primary botao-categ dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Categorias
+    </a>
+
+            <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Home</a>
+                <a class="dropdown-item" href="#">Computadores ></a>
+                <a class="dropdown-item" href="#">Notebooks ></a>
+                <a class="dropdown-item" href="#">Processadores ></a>
+                <a class="dropdown-item" href="#">HD ></a>
+                <a class="dropdown-item" href="#">Mouse ></a>
+                <a class="dropdown-item" href="#">Teclado ></a>
+                <a class="dropdown-item" href="#">Outros ></a>
+            </div>
+        </div>
+
+        <!-- Menu direito -->
+        <div class="btn-group dropleft" style="float: right;">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Opções
+    </button>
+            <div class="dropdown-menu bg-dark" id="menu-direito" style="border: 2px solid black;">
+                <a href="#"> <img src="img/iconeCarrinho.png" style="margin-left: 50px;" width="50" height="50" alt="Carrinho" title="Carrinho"> </a>
+                <br> <br>
+
+                <a href="montePC.html"> <img src="img/montePC.png" style="margin-left: 40px;" width="80" height="50" alt="Monte seu PC" title="Monte seu PC"> </a>
+                <br> <br> <br>
+
+                <a href="#"> <img src="img/instagram.png" style="margin-left: 58px;" width="45" height="40" alt="instagram" title="Nosso Instagram"> </a>
+            </div>
+        </div>
+
+
+        <br> <br> <br> <br>
+
+        <a href="#"> <img src="img/suporte.png" class="suporte" data-toggle="modal" data-target="#suporte" width="100" height="100" alt="Suporte" title="Suporte"> </a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="suporte" tabindex="-1" role="dialog" aria-labelledby="suporte" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-dark" style="color: whitesmoke; border: 2px solid Black;">
+                    <div class="modal-header" id="ModCenter">
+                        <h5> Tire suas dúvidas aqui! </h5>
+
+                        <button class="close" data-dismiss="modal" type="button" aria-label="Fechar">
+            <span aria-hidden="true" > &CircleTimes; </span>
+        </button>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <form action="formulario">
+                            <div class="form-group">
+                                <label for="nome"> Nome: </label>
+                                <input type="text" id="nome" style="margin-top: 10px;" class="form-control" placeholder="Digite aqui...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mail"> Email: </label>
+                                <input type="email" id="mail" style="margin-top: 10px;" class="form-control" placeholder="Digite aqui...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="msg"> Deixe sua mensagem para nós </label> <br>
+                                <textarea name="suporte" id="msg" style="margin-top: 10px;" class="form-control" cols="49" rows="5" placeholder="Escreva aqui..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+            Confirmar
+        </button>
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Fechar
+        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Corpo da página -->
+        <section class="container" style=" position: relative;">
+
+            <center>
+                <h2 id="titulo" class="titulo"> Mouse Gamer</h2>
+            </center>
+
+
+            <!--Carrosel-->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner mouse">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 mouse1" src="img/Mouse gamer1.jpg" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Mouse gamer2.jpg" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/Mous gamer3.jpg" alt="Terceiro Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" style="background-color: blue;" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" style="background-color: blue;" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+
+
+            <div class="preco">
+                <label id="precoNum" style="margin-left: 20px; margin-top: 10px;">
+          R$ 350,00
+        </label> <br> <br>
+                <button id="adcCarrinho" type="button" class="btn btn-primary btn-lg botao">Adicionar ao carrinho</button>
+            </div>
+        </section>
+
+        <div id="Blocodescricao" class="container bg-dark" style="width: fit-content;">
+            <center>
+                <h2 id="descricao">Descrição</h2>
+            </center>
+            Descrição Do Produto <br>
+            <br>
+            <br> RASTREAMENTO
+            <br> Resolução: 200 - 8,000 dpi<br> Zero suavização/aceleração/filtragem<br> Aceleração máx.: >25<br> Velocidade Máx.: >200 IPS3<br>
+            <br>
+            <br> RESPOSTA
+            <br> Formato de dados USB: 16 bits/eixo<br> Taxa de relatório USB: 1000 Hz (1ms)<br> Microprocessador: 32-bit ARM<br>
+            <br>
+            <br> DURABILIDADE
+            <br> Botões (Esquerda/Direita): 10 milhões de cliques<br> Pés PTFE: 250 quilômetros<br>
+            <br>
+            <br> REQUISITOS DO SISTEMA<br> REQUISITOS DO SISTEMA<br> Windows 7 ou mais recente<br> macOS 10.11 ou mais recente<br> Chrome OSTM<br> Porta USB <br> Acesso à internet para Logitech Gaming Software (opcional)<br>
+            <br>
+            <br> ESPECIFICAÇÕES FÍSICAS<br> Altura: 116.6 mm<br> Largura: 62.15 mm<br> Profundidade: 38.2 mm<br> Peso: 85 g somente mouse <br> Comprimento do cabo: 2.10 m<br>
+            <br>
+            <br> OUTRAS CARACTERÍSTICAS<br> Memória integrada: 1 perfil<br> LIGHTSYNC RGB: 1 zona<br> Cabo não trançado<br> Sistema de Tensionamento de Botão Mecânico<br>
+        </div>
+
+        <section class="container sugestão">
+            <div id="Blocosugestao">
+                <center>
+                    <h2 id="sugestao">Sugestões</h2>
+                </center>
+            </div>
+
+            <div id="carouselkExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-linner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 mouse1" src="img/banner1.jpg" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/banner4.png " alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="img/banner3.jpg" alt="Terceiro Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselkExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselkExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <div>
+        </section>
+
+
+
+        <footer class="bg-dark col-12 final" style="color: whitesmoke; border-top: 2px solid black;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        Copyright © 2020
+                    </div>
+                    <div class="col-sm">
+                        4739-3664
+                    </div>
+                    <div class="col-sm">
+                        <a href="#"> Quem Somos </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="#"> Certificados de Segurança </a>
+                    </div>
+                </div>
+        </footer>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+</body>
+
+</html>
