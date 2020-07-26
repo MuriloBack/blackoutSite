@@ -67,6 +67,12 @@
         .carousel-control-next {
             width: 70%;
         }
+        .carousel-control-prev {
+            margin: -5px;
+        }
+        .carousel-control-next {
+            margin: -117px;
+        }
         .fundoOpaco {
             position: unset;
             height: 1730px;
